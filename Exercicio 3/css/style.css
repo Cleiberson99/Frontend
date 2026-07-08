@@ -73,6 +73,21 @@ section{
 }
 
 h1, h2{
-    color:rgb(204, 0, 255) ;
     margin-bottom: 1rem ;
+}
+
+#titulo-amarelo{
+    color: rgb(230, 177, 43);
+}
+
+#titulo-roxo{
+    color: rgb(55, 0, 107);
+}
+
+#titulo-azul{
+     color: rgb(62, 210, 255);
+}
+
+#titulo-marrom{
+    color: rgb(80, 34, 1);
 }
