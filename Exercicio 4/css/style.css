@@ -150,6 +150,122 @@ main h1{
 .card-produto a:hover{
     background: darkmagenta;
 }
-.boas-vindas button:hover{
-    background-color: rgb(72, 4, 136);
+
+/* Página de detalhes */
+
+.detalhes{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(25,25,45,.9);
+    border-radius: 10px;
+}
+
+.detalhes h1{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.detalhes h2{
+    color:#00ff99;
+    margin-bottom:20px;
+}
+
+.detalhes p{
+    margin-bottom:20px;
+}
+
+.detalhes ul{
+    margin:20px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:darkslateblue;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.botao:hover{
+    background:darkmagenta;
+}
+
+/* Contato */
+
+.contato{
+    max-width:700px;
+    margin:40px auto;
+    background:rgba(25,25,45,.9);
+    padding:30px;
+    border-radius:10px;
+}
+
+.contato h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.contato form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+
+.contato input,
+.contato textarea{
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+.contato button{
+    padding:15px;
+    border:none;
+    background:darkslateblue;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.contato button:hover{
+    background:darkmagenta;
+}
+
+.imagem-produto{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 3px solid darkslateblue;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(25,25,45,.9);
+    border-radius: 10px;
+}
+
+.detalhes p,
+.detalhes ul{
+    width: 100%;
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
