@@ -46,3 +46,28 @@ h2{
 .btn{
     border-radius:8px;
 }
+
+.card{
+    height:100%;
+    border:none;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    display:flex;
+    flex-direction:column;
+}
+
+.card-body .btn{
+    margin-top:auto;
+}
