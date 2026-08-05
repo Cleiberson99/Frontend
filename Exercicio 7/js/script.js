@@ -1,66 +1,77 @@
-// Lista de produtos fictícios
-const produtos = [
+let produtos = [
     {
         nome: "Notebook",
-        preco: "R$ 3.500,00",
-        descricao: "Notebook para estudos e trabalho."
+        categoria: "Eletrônicos",
+        preco: 3500,
+        estoque: 10,
+        status: "Disponível"
     },
     {
         nome: "Mouse Gamer",
-        preco: "R$ 120,00",
-        descricao: "Mouse com alta precisão para jogos."
-    },
-    {
-        nome: "Teclado Mecânico",
-        preco: "R$ 250,00",
-        descricao: "Teclado confortável e resistente."
-    },
-    {
-        nome: "Monitor LED",
-        preco: "R$ 900,00",
-        descricao: "Monitor de alta qualidade de imagem."
-    },
-    {
-        nome: "Headset",
-        preco: "R$ 180,00",
-        descricao: "Headset com microfone integrado."
+        categoria: "Acessórios",
+        preco: 120,
+        estoque: 25,
+        status: "Disponível"
     }
 ];
 
 
-// Criar lista de produtos na página
-const listaProdutos = document.getElementById("listaProdutos");
+// Cadastro de produtos
 
-if (listaProdutos) {
+const formulario = document.getElementById("formCadastro");
 
-    produtos.forEach(produto => {
 
-        listaProdutos.innerHTML += `
-        
-        <div class="col-md-4 mb-4">
+if (formulario) {
 
-            <div class="card h-100">
+    formulario.addEventListener("submit", function(event){
 
-                <div class="card-body">
+        event.preventDefault();
 
-                    <h5 class="card-title">${produto.nome}</h5>
-
-                    <p class="card-text">
-                        ${produto.descricao}
-                    </p>
-
-                    <p class="fw-bold">
-                        ${produto.preco}
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        `;
+        cadastrarProduto();
 
     });
+
+}
+
+
+function cadastrarProduto(){
+
+
+    let nome = document.getElementById("nome").value;
+    let categoria = document.getElementById("categoria").value;
+    let preco = document.getElementById("preco").value;
+    let estoque = document.getElementById("estoque").value;
+    let status = document.getElementById("status").value;
+
+
+    if(nome === "" || categoria === "" || preco === "" || estoque === ""){
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+
+    let produto = {
+
+        nome: nome,
+        categoria: categoria,
+        preco: preco,
+        estoque: estoque,
+        status: status
+
+    };
+
+
+    produtos.push(produto);
+
+
+    document.getElementById("mensagem").innerHTML =
+    `
+    <div class="alert alert-success">
+        Produto cadastrado com sucesso!
+    </div>
+    `;
+
+
+    formulario.reset();
 
 }
