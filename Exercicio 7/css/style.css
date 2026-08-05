@@ -61,3 +61,15 @@ h1 {
     font-weight: bold;
     color: #212529;
 }
+
+form {
+    border-radius: 15px;
+}
+
+.btn-primary {
+    border-radius: 10px;
+}
+
+input, select {
+    border-radius: 10px !important;
+}
