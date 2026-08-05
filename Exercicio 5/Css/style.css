@@ -17,27 +17,54 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 header{
-    background-color: darkslateblue;
-    padding: 1rem 0;
-    position: sticky;
-    font-family: 'Courier New', Courier, monospace;
+    background: darkslateblue;
+    padding: 15px;
+}
+
+#loja{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.menu-icon{
+    display:block;
+    text-align:center;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+nav{
+    display:none;
+}
+
+#menu-toggle:checked + .menu-icon + nav{
+    display:block;
 }
 
 nav ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    list-style: none;
-    padding: 20px;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:0;
 }
 
 nav a{
-    color: azure;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.8s ease;
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    background:rgb(61,61,156);
+    border-radius:5px;
 }
 
 nav a:hover{
@@ -298,4 +325,44 @@ footer{
     background: darkslateblue;
     color: white;
     margin-top: 40px;
+}
+
+@media (min-width:768px){
+
+.menu-icon{
+    display:none;
+}
+
+nav{
+    display:block;
+}
+
+nav ul{
+    flex-direction:row;
+    justify-content:center;
+}
+
+.galeria-produtos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+@media (min-width:1024px){
+
+.galeria-produtos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.detalhes{
+    max-width:900px;
+}
+
+.contato{
+    max-width:700px;
+}
+
+.portfolio{
+    max-width:800px;
 }
