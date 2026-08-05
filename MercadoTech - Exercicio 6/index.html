@@ -1,34 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MercadoTech</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<main>
-    <section class="container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
 
-    <div class="text-center">
+            <a class="navbar-brand" href="#">MercadoTech</a>
 
-        <h1>Bem-vindo à MercadoTech</h1>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
 
-        <p class="lead">
+                <span class="navbar-toggler-icon"></span>
 
-            A MercadoTech é uma empresa fictícia especializada
-            na venda de produtos de tecnologia de alta qualidade.
+            </button>
 
-        </p>
+            <div class="collapse navbar-collapse" id="menu">
 
-        <a href="#" class="btn btn-primary">
-            Conheça nossos produtos
-        </a>
-    </div>
-</section>
-</main>
+                <ul class="navbar-nav ms-auto">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <section class="container py-5 text-center">
+
+            <h1>Bem-vindo à MercadoTech</h1>
+
+            <p class="lead">
+                A MercadoTech é uma empresa especializada na venda de produtos
+                de tecnologia com qualidade, inovação e os melhores preços.
+            </p>
+
+            <a href="#" class="btn btn-primary">
+                Ver Produtos
+            </a>
+
+        </section>
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Categorias</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="categoria">
+                        <h3>💻 Notebooks</h3>
+                        <p>Equipamentos para estudo, trabalho e jogos.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="categoria">
+                        <h3>📱 Smartphones</h3>
+                        <p>Modelos modernos das principais marcas.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="categoria">
+                        <h3>🎧 Acessórios</h3>
+                        <p>Fones, teclados, mouses e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+
+            <h2 class="text-center mb-4">Destaques</h2>
+
+            <div class="row">
+
+                <div class="col-12 col-lg-4">
+                    <div class="categoria">
+                        <h4>Entrega Rápida</h4>
+                        <p>Receba seus produtos com rapidez e segurança.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="categoria">
+                        <h4>Pagamento Seguro</h4>
+                        <p>Diversas formas de pagamento para sua comodidade.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="categoria">
+                        <h4>Suporte Especializado</h4>
+                        <p>Equipe pronta para ajudar em qualquer dúvida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
