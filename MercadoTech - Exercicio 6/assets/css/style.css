@@ -24,3 +24,25 @@ h2{
 .btn{
     padding: 12px 25px;
 }
+
+.card{
+    transition: .3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title{
+    font-weight:bold;
+}
+
+.btn{
+    border-radius:8px;
+}
